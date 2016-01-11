@@ -32,6 +32,6 @@ var makeDiamond = function(num){
 	}
 }
 
-//makeDiamond(5);
+makeDiamond(5);
 
 makeDiamond(3);

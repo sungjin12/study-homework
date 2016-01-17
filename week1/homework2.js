@@ -1,14 +1,13 @@
 var sumLineNum = function(num){
-	a = num+'';
-	sum = 0;
-	for(i = a.length; i > 0; i--){
-		b = Math.floor(num / Math.pow(10, i - 1));
-		num = num - b * Math.pow(10, i - 1);
-		sum += b;
-	}
-	console.log('각 자릿수의 총합 : ' + sum);
-}
+	var sum = 0;
 
+	while(num > 0) {
+		sum += num % 10;                // 나머지를 구해서 sum에 더한다.
+		num = Math.floor(num / 10);     // 10으로 나눈후 소숫점 이하의 숫자를 없엔다.
+	}
+
+	console.log(sum);
+}
 sumLineNum(54321);
 
 sumLineNum(543);

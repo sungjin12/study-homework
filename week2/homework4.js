@@ -8,7 +8,7 @@ var reversNum = function(num){
 		value = Math.floor(value / 10);
 		result += a;
 	}
-	console.log(result);
+	console.log('역순은 : ' + result);
 }
 
 reversNum(123);
